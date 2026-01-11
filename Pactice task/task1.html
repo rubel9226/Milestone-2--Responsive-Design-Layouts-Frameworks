@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design a responsive flex layout. </title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{
+            background-color: aquamarine;
+            padding: 5px;
+        }
+        .container section img{
+            width: 100%;
+        }
+        @media screen and (min-width: 576px){
+            .container{
+                display: flex;
+                gap: 10px;
+            }
+            .container section img{
+            width: 100%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <img src="../images/Banner Photos.png" alt="">
+        </section>
+        <section>
+            <h2>Hello All! I will go there.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ex delectus ea numquam. Aliquid tempora soluta labore, itaque quod animi corrupti beatae. Repellat nulla, earum doloremque odit saepe veritatis quidem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, fugit est aperiam maxime autem saepe sapiente omnis iure fugiat. Corrupti aliquam eos, error nostrum quia necessitatibus, quis consequatur dolorum voluptatum esse eveniet! Voluptas, reiciendis. Atque eius tempore magni, quibusdam corporis mollitia fuga exercitationem perferendis minus, eum eaque ducimus sequi a.</p>
+        </section>
+    </div>
+</body>
+</html>

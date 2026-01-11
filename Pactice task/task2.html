@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design a responsive grid layout</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{
+            background-color: gainsboro;
+            max-width: 992px;
+            margin: 0 auto;
+        }
+        .container div{
+            border: 2px solid tomato;
+            margin-bottom: 5px;
+            color: white;
+        }
+        .container div img{
+            width: 100%;
+        }
+        .item1{
+            background-color: #ED0000;
+            grid-area: item1;
+        }
+        .item2{
+            background-color: #FFC000;
+            grid-area: item2;
+        }
+        .item3{
+            background-color: #6F2F9F;
+            grid-area: item3;
+        }
+        .item4{
+            background-color:#6B6B6B;
+            grid-area: item4;
+        }
+        @media screen and (min-width: 576px){
+            .container{
+                padding: 5px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: 
+                "item1 item1 item2 item2"
+                "item1 item1 item3 item4";
+                gap: 5px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <img src="../images/Banner Photos.png" alt="">
+            <h2>Item - 1</h2>
+            <p>Price: - $100</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quibusdam cumque nemo, harum consectetur at quos velit officiis obcaecati, mollitia natus aut iusto minima ducimus dolorum! Earum atque impedit consectetur recusandae, ipsam non eligendi autem quasi, sequi facilis dolores velit?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores eaque labore repellendus alias ipsa ad aspernatur eligendi adipisci deserunt enim.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptate id ducimus voluptates voluptatem harum!</p>
+        </div>
+        <div class="item2">
+            <img src="../images/Health-food.jpg" alt="">
+            <h2>Item - 2. This items verry expensive. and i will try buy this</h2>
+            
+        </div>
+        <div class="item3">
+            <img src="../images/fish.jpg" alt="">
+            <h2>Item - 3</h2>
+            
+        </div>
+        <div class="item4">
+            <img src="../images/birds.jfif" alt="">
+            <h2>Item - 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+    </div>
+</body>
+</html>
